@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: borderbox;
+}
+
+
 body {
 	background-image: url("http://www.cheapviagrasw.com/wp-content/uploads/2014/08/reebok-crossfit-nano-4-0-with-ca.jpg");
 	background-repeat: no-repeat;
@@ -30,14 +37,37 @@ h2 {
 }
 
 li {
+	vertical-align: bottom;
     background-color: lightgrey;
-    width: 200px;
-    height: 200px;
+    width: 26.5%;
+    height: 250px;
     padding: 25px;
-    margin: 25px;
+    margin: 1%;
     display: inline-table;
-    margin-left: 0;
-    margin-right: 0;
+}
 
+form {
+	font-size: 60px;
+}
+
+span {
+	color: red;
+	text-align: center;
+	display: inline-block;
+}
+
+input[type = "text"]{
+	text-align: center;
+	border-bottom: 2px dotted blue;
+	box-sizing: borderbox;
+
+}
+
+input[type = "text"]:hover{
+	cursor: pointer;
+}
+
+input[type = "text"]:active , input[type = "text"]:focus{
+	border: blue;
 }
 

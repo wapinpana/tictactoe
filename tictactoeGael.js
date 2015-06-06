@@ -1,3 +1,18 @@
+//starting with the js, to add input boxes for the player names to be entered, then I'm going to take that text and replace the text attached to the span tag with the player's name. 
+var inputs = $("input[type='text']");
+$inputs.on("keypress", function(eventObject){
+	var $currentPlayer = $(this);
+	var userName = $currentPlayer.val();
+	//taking the value attached to current player to that I can attach it to the span text. 
+	if (userText){
+		var $span = $currentPlayer.parent();
+		$span.text(userName);
+	} else {
+		$currentPlayer.focus(); //this will make sure we enter a name for both players. 
+	};
+}
+
+////////////////////////////////////////////////////////
 //here I'm starting by creating the board, I don't know if I want to make the squares as li 3 squares across by 3.
 //I'm going to start with an array called gameboard and put the positions of all of the boxes on the grid.
 
@@ -100,9 +115,9 @@ var playerX = {
 	name: "name",
 	boxesPicked: [],
 	wins: 0,
-	viewCards: function(){
+	viewBoxes: function(){
 		for(var i = 0; i < player.cards.length; i++){
-			var $playerXCards = $('<div>');
+			var $playerXBoxes = $('<div>');
 			//creating new div to hold player cards selected
 			var $h2 = $('<h2>').text(player.name);
 
