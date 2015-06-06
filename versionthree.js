@@ -27,9 +27,9 @@ var playerO = {
 
 var game = {
 	players: [playerX, playerO],
-	currentPlayer: [this.playerX, this.playerO],
-	boxesPicked: [],
-	// boxesPickedO: [],
+	currentPlayer: this.playerX, this.playerO,
+	boxesPickedX: [],
+	boxesPickedO: [],
 	// [boxNumber, row, column]
 	gameGrid: [
 		[1, 1, 1],
@@ -45,9 +45,11 @@ var game = {
 	renderBoard: function(){
 		var $board = $('#gameboard');
 		var $list = $('<ul>');
+
 		var indexLocker = function (index) {
 			var myClickFunction = function () {
 				$(this).text(thisGame.currentPlayer.mark);
+				//puts currenPlayers mark X or O into $this
 				thisGame.currentPlayer.boxesPicked.push(thisGame.gameGrid[index][0]);
 				//should I have two different boxex picked
 				//we are pushing the gameboard index(0) into the boxed picked of the current player in this game.
@@ -76,6 +78,7 @@ var game = {
 			$el.appendTo($list);
 			// find Matt and make explain
 			$el.on('click', indexLocker(i));
+			
 			//at this part we are saying that we are displaying what is (i)
 			// (function (index) {
 			// 	$el.on('click', function () {
