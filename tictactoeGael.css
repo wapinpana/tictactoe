@@ -10,7 +10,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 1000px;
-	height: 1000px;
+	height: 2000px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -48,6 +48,7 @@ li {
 
 form {
 	font-size: 60px;
+	color: white;
 }
 
 span {
@@ -57,10 +58,18 @@ span {
 }
 
 input[type = "text"]{
-	text-align: center;
 	border-bottom: 2px dotted blue;
-	box-sizing: borderbox;
+	box-sizing: none;
+	color: white;
 
+}
+
+input[#id = "P1"]{
+	text-align: left; 
+}
+
+input[#id = "P2"]{
+	text-align: right; 
 }
 
 input[type = "text"]:hover{
@@ -68,6 +77,6 @@ input[type = "text"]:hover{
 }
 
 input[type = "text"]:active , input[type = "text"]:focus{
-	border: blue;
+	border: black;
 }
 

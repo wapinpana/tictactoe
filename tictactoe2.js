@@ -27,7 +27,7 @@ var playerO = {
 
 var game = {
 	players: [playerX, playerO],
-	currentPlayer: [this.playerX, this.playerO],
+	currentPlayer: players,
 	boxesPicked: [],
 	// boxesPickedO: [],
 	// [boxNumber, row, column]
@@ -49,14 +49,14 @@ var game = {
 			var myClickFunction = function () {
 				$(this).text(thisGame.currentPlayer.mark);
 				thisGame.currentPlayer.boxesPicked.push(thisGame.gameGrid[index][0]);
-				//should I have two different boxex picked
+				//this line above will pick up the gameGrid index and put it inside the currentPlayer.boxesPicked.
 				//we are pushing the gameboard index(0) into the boxed picked of the current player in this game.
 				//Here I need I believe a if/then statement that states that if box is clicked do not allow another click to change the outcome. 
 				// if (thisGame.currentPlayer.mark == this)
 				
 				//above all the possible winning combinations of the game. I need to compare it now to the array of thisGame.currentPlayer.boxesPicked[i]
-				var checkWin = function() {
-				};
+				// var checkWin = function() {
+				// };
 				// var gameWinner = [];
 				// 	for(var i = 0; i < winningCombo.length){
 
@@ -75,16 +75,7 @@ var game = {
 			$el = $('<li>').attr("class", "box").attr("id", this.gameGrid[i][0]);
 			$el.appendTo($list);
 			// find Matt and make explain
-			$el.on('click', indexLocker(i));
-			//at this part we are saying that we are displaying what is (i)
-			// (function (index) {
-			// 	$el.on('click', function () {
-			// 		$(this).text(thisGame.currentPlayer.mark);
-			// 		thisGame.currentPlayer.boxesPicked.push(thisGame.gameBoard[index][0])
-			// 		// add checkWin function 
-			// 		thisGame.changePlayer();
-			// 	})
-			// })(i);
+			// $el.on('click', indexLocker(i));
 		}
 	console.log('board rendered');
 	},
