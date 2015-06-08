@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
+  <title>Bumpers Tic Tac Toe</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <link rel="stylesheet" href="tictactoeGael.css">
 </head>
 <body>
   <h1>Bumpers Tic Tac Toe</h1>
-  <h2>Throw around some weight to see who wins</h2>
-  <div id="gameboard">
+  <div id="gameBoard" style="float: center">
+    <input type="button" id="box1" onclick="boxClicked('box1')"/>
+    <input type="button" id="box2" onclick="boxClicked('box2')"/>
+    <input type="button" id="box3" onclick="boxClicked('box3')"/>
+    <input type="button" id="box4" onclick="boxClicked('box4')"/>
+    <input type="button" id="box5" onclick="boxClicked('box5')"/>
+    <input type="button" id="box6" onclick="boxClicked('box6')"/>
+    <input type="button" id="box7" onclick="boxClicked('box7')"/>
+    <input type="button" id="box8" onclick="boxClicked('box8')"/>
+    <input type="button" id="box9" onclick="boxClicked('box9')"/>
+  </div>
   <div id="playerInput">
-    <form>
-      Player One Enter Your Name:<input type="text" id="P1" placeholder="player name" autofocus="true">
-      <br>
-      Player Two Enter Your Name:<input type="text" id="P2" placeholder="player name" autofocus="true">
+    <form onsubmit=newName(playerName)>
+      <input type="text" name="firstname" value="Mickey">
+      Player Name:<input type="text" id="playerName" placeholder="player name" autofocus="true"><br>
+      <input type="submit" value="Submit">
     </form>
   </div>
-  <script src="codementorversion.js"></script>
+
+    <div type="text" id="xname"></div>
+    <div type="text" id="oname">aaa</div>
+
+  <script src="tictactoeGael.js"></script>
 </body>
 </html>

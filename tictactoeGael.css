@@ -1,9 +1,19 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: borderbox;
+#gameBoard {
+	top: 100px;
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
 }
 
+input[type = "button"] {
+	width: 160px;
+	height: 160px;
+	border: none;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 70px;
+	padding: 3px;
+}
 
 body {
 	background-image: url("http://www.cheapviagrasw.com/wp-content/uploads/2014/08/reebok-crossfit-nano-4-0-with-ca.jpg");
@@ -20,7 +30,8 @@ h1 {
 	
 	color: white;
 	font-size: 80px;
-	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 	/*@-webkit-keyframes mymove {
     from {background-color: red;}
     to {background-color: blue;}}*/
@@ -36,15 +47,6 @@ h2 {
 	margin-right: 0;
 }
 
-li {
-	vertical-align: bottom;
-    background-color: lightgrey;
-    width: 26.5%;
-    height: 250px;
-    padding: 25px;
-    margin: 1%;
-    display: inline-table;
-}
 
 form {
 	font-size: 60px;
@@ -58,18 +60,17 @@ span {
 }
 
 input[type = "text"]{
-	border-bottom: 2px dotted blue;
-	box-sizing: none;
-	color: white;
+	border-bottom: 2px solid black;
+	color: black;
 
 }
 
 input[#id = "P1"]{
-	text-align: left; 
+	text-align: center; 
 }
 
 input[#id = "P2"]{
-	text-align: right; 
+	text-align: center; 
 }
 
 input[type = "text"]:hover{
