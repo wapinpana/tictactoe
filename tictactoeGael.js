@@ -1,3 +1,10 @@
+var $input = $("input[type ='text']");
+
+$input.on("keypress", function(eventObject){
+	console.log("this", this);
+	console.log(eventObject);
+})
+
 var player = 1;
 var currentSymbol = function() {
 	if(player === 1)

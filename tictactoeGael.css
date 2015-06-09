@@ -1,36 +1,16 @@
-#gameBoard {
-	top: 100px;
-	width: 1000px;
-	height: 1000px;
-	border: 8px solid black;
-	position: relative;
-	margin: auto;
-	display: inline-block;
-}
-
-input[type = "button"] {
-	width: 300px;
-	height: 300px;
+* {
 	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 80px;
-	padding-left: 50px;
+	margin: 0;
+	padding: 0;
+	box-sizing: borer-box;
 }
 
-input[type = "button"]:hover {
-	cursor: pointer;
-}
 
-body {
-	background-image: url("http://www.mwydall.com/wp-content/uploads/2009/05/img_1248ds.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 1000px;
-	height: 2000px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
 }
 
 h1 {
@@ -44,10 +24,6 @@ h1 {
     to {background-color: blue;}}*/
     /*I want to animate it to change colors*/
 }
-h2 {
-	color: red;
-	text-align: center;
-}
 
 h2 {
 	text-align: center;
@@ -58,6 +34,41 @@ h2 {
 	margin-right: 0;
 }
 
+body {
+	background-image: url("http://www.mwydall.com/wp-content/uploads/2009/05/img_1248ds.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 1000px;
+	height: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#gameBoard {
+	top: 100px;
+	width: 800px;
+	height: 800px;
+	position: inherit;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+input[type = "button"] {
+	width: 250px;
+	height: 250px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	text-align: center;
+	padding-left: 50px;
+}
+
+input[type = "button"]:hover {
+	cursor: pointer;
+}
 
 form {
 	font-size: 60px;
@@ -71,9 +82,20 @@ form {
 	text-align: center;
 }
 
+span {
+
+	color: white;
+	font-family: arial;
+	font-size: 30px;
+
+}
+
 input[type = "text"]{
 	border-bottom: 2px solid black;
 	color: black;
+	outline: none;
+	border-bottom: 2px dotted white;
+	text-align: center;
 }
 
 input[type = "text"]:hover{
@@ -81,22 +103,42 @@ input[type = "text"]:hover{
 }
 
 input[type = "text"]:active , input[type = "text"]:focus{
-	border: black;
+	border: solid blue;
 }
 
 input[#id = "P1"]{
 	text-align: center; 
 }
 
-input[type = "submit"]{
-	color: white;
-	height: 70px;
-	width: 70px;
+button[type = "submit"]{
+	color: black;
+	height: 50px;
+	width: 0px;
 }
 
 div.image {
 	content: (blue.png);
 
+}
+
+#xname {
+	text-align: left;
+	color: blue;
+
+}
+
+#oname {
+	text-align: left;
+	color: red;
+
+}
+
+#namebox {
+	color: white;
+}
+
+#namebox.finished {
+	color: black;
 }
 
 
