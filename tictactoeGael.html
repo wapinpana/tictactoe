@@ -7,7 +7,8 @@
    <link rel="stylesheet" href="tictactoeGael.css">
 </head>
 <body>
-  <h1>Bumpers Tic Tac Toe</h1>
+  <h1><center>Olympic Weigthlifting</center></h1>
+  <h2>Tic-Tac-Toe</h2>
   <div id="gameBoard" style="float: center">
     <input type="button" id="box1" onclick="boxClicked('box1')"/>
     <input type="button" id="box2" onclick="boxClicked('box2')"/>
@@ -19,17 +20,15 @@
     <input type="button" id="box8" onclick="boxClicked('box8')"/>
     <input type="button" id="box9" onclick="boxClicked('box9')"/>
   </div>
+  <br>
   <div id="playerInput">
     <form onsubmit=newName(playerName)>
-      <input type="text" name="firstname" value="Mickey">
       Player Name:<input type="text" id="playerName" placeholder="player name" autofocus="true"><br>
       <input type="submit" value="Submit">
     </form>
   </div>
-
-    <div type="text" id="xname"></div>
-    <div type="text" id="oname">aaa</div>
-
+    <div type="text" id="xname" class="image">Player One</div>
+    <div type="text" id="oname" class="image2">Player Two</div>
   <script src="tictactoeGael.js"></script>
 </body>
 </html>

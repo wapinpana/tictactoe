@@ -1,22 +1,29 @@
 #gameBoard {
 	top: 100px;
-	width: 500px;
-	height: 500px;
-	border: 2px solid black;
+	width: 1000px;
+	height: 1000px;
+	border: 8px solid black;
+	position: relative;
+	margin: auto;
+	display: inline-block;
 }
 
 input[type = "button"] {
-	width: 160px;
-	height: 160px;
+	width: 300px;
+	height: 300px;
 	border: none;
-	margin-left: 0;
-	margin-right: 0;
-	font-size: 70px;
-	padding: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 80px;
+	padding-left: 50px;
+}
+
+input[type = "button"]:hover {
+	cursor: pointer;
 }
 
 body {
-	background-image: url("http://www.cheapviagrasw.com/wp-content/uploads/2014/08/reebok-crossfit-nano-4-0-with-ca.jpg");
+	background-image: url("http://www.mwydall.com/wp-content/uploads/2009/05/img_1248ds.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 1000px;
@@ -27,22 +34,26 @@ body {
 }
 
 h1 {
-	
 	color: white;
-	font-size: 80px;
-	margin-right: auto;
-	margin-left: auto;
+	font-family: impact;
+	font-size: 100px;
+	text-align: auto;
+	top-margin: 200px;
 	/*@-webkit-keyframes mymove {
     from {background-color: red;}
     to {background-color: blue;}}*/
     /*I want to animate it to change colors*/
 }
+h2 {
+	color: red;
+	text-align: center;
+}
 
 h2 {
 	text-align: center;
 	color: red;
-	font-family: impact;
-	font-size: 40px;
+	font-family: arial;
+	font-size: 60px;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -53,24 +64,16 @@ form {
 	color: white;
 }
 
-span {
-	color: red;
-	text-align: center;
+#playerinput {
+	border-spacing: 20px;
 	display: inline-block;
+	margin: 0;
+	text-align: center;
 }
 
 input[type = "text"]{
 	border-bottom: 2px solid black;
 	color: black;
-
-}
-
-input[#id = "P1"]{
-	text-align: center; 
-}
-
-input[#id = "P2"]{
-	text-align: center; 
 }
 
 input[type = "text"]:hover{
@@ -80,4 +83,22 @@ input[type = "text"]:hover{
 input[type = "text"]:active , input[type = "text"]:focus{
 	border: black;
 }
+
+input[#id = "P1"]{
+	text-align: center; 
+}
+
+input[type = "submit"]{
+	color: white;
+	height: 70px;
+	width: 70px;
+}
+
+div.image {
+	content: (blue.png);
+
+}
+
+
+
 
