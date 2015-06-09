@@ -14,7 +14,7 @@ If winner is found it moves to a resetBoard function.  In this function, where i
 Inside checkForWinner function inside the else if condition, if any of the boxes are not equal to an empty string meaning they have been clicked but there is no winner, because no winning combination previously, the board will still know to reset itself and clear the board to restart the new game.
 
 Unsolved Problems: 
-1. I'm trying to resolve the issue of inserting the submit button and having it render the names of the current player to the page. 
+1. I'm trying to resolve the issue of inserting the submit button and having it render the names of the current player to the page. I decided instead to just add an input field for each player. 
 
 2. When I click on the boxes they shift down. Trying to fix with CSS. 
 
